@@ -99,14 +99,21 @@
                 <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
                     <a href="2024%20Resume%20-%20Kenneth%20Hidayat.pdf" download class="button large" style="margin-bottom: 20px;">Download Resume</a>
                     <br>
-                    <button onclick="document.getElementById('resumePreview').style.display='block'" class="button large">View Resume</button>
+                    <button onclick="toggleResume()" class="button large">View Resume</button>
                 </div>
                 <div id="resumePreview" style="text-align: center; display: none; margin-top: 20px; margin-bottom: 60px; transition: all 0.3s ease-in-out;">
                     <iframe src="https://docs.google.com/gview?url=https://khidayat527.github.io/khidayat_porto/2024%20Resume%20-%20Kenneth%20Hidayat.pdf&embedded=true" width="80%" height="600px"></iframe>
                 </div>
-                <div>
-                    <p>Feel free to contact kennethhidayat1@gmail.com for further inquiries</p>
-                </div>
+                <script>
+                    function toggleResume() {
+                        var resumeDiv = document.getElementById('resumePreview');
+                        if (resumeDiv.style.display === 'none' || resumeDiv.style.display === '') {
+                            resumeDiv.style.display = 'block';
+                        } else {
+                            resumeDiv.style.display = 'none';
+                        }
+                    }
+                </script>
             </section>
             <!-- Featured Projects -->
             <section id="projects" class="main special content-section">
