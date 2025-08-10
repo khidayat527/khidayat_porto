@@ -79,7 +79,7 @@
                     </p>
                 </div>
 
-                <!-- Professional Summary (added) -->
+                <!-- Professional Summary -->
                 <div>
                     <h3>Professional Summary</h3>
                     <p>
@@ -94,7 +94,7 @@
                 <div>
                     <h3>Professional Experience</h3>
 
-                    <!-- TCW Global (added to top) -->
+                    <!-- TCW Global -->
                     <p><strong><a href="https://www.tcwglobal.com/" target="_blank" rel="noopener">TCW Global</a></strong><br>
                         Technology Consultant<br>
                         San Diego, US | Jun 2025 – Aug 2025
@@ -104,6 +104,7 @@
                         <li>Built automated workflows in GoHighLevel, reducing booking time by 70% and increasing client engagement by 15%.</li>
                     </ul>
 
+                    <!-- SDG&E -->
                     <p><strong><a href="https://www.sdge.com/" target="_blank" rel="noopener">San Diego Gas & Electric</a></strong><br>
                         Data Analyst<br>
                         San Diego, US | Sept 2024 – Feb 2025
@@ -113,6 +114,7 @@
                         <li>Leveraged PSPS probabilities to assess and mitigate the risk of public safety shutoffs in critical grid sections.</li>
                     </ul>
 
+                    <!-- GAO Tek -->
                     <p><strong><a href="https://gaotek.com/" target="_blank" rel="noopener">GAO Tek Inc</a></strong><br>
                         Tech Support Manager & Digital Marketer<br>
                         New York, US | Jun 2023 – Oct 2023
@@ -122,6 +124,7 @@
                         <li>Co-led training and onboarding for 40 interns to scale the tech division.</li>
                     </ul>
 
+                    <!-- Pintarnya -->
                     <p><strong><a href="https://pintarnya.com/" target="_blank" rel="noopener">Pintarnya</a></strong><br>
                         Data Analyst Intern<br>
                         Jakarta, ID | Jun 2022 – Sept 2022
@@ -131,15 +134,26 @@
                     </ul>
                 </div>
 
-                <!-- Resume buttons / preview -->
+                <!-- Resume buttons / inline viewer using Google Docs Published link -->
                 <div style="text-align: center; margin-top: 20px; margin-bottom: 40px;">
-                    <a href="CV%20Kenneth%20Hidayat%20(6).pdf" download class="button large" style="margin-bottom: 20px;">Download Resume</a>
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vSIC95Tuc9P3VyJDr1O7JunhO-aovgz1z0JIrLs5sFIv9c_fSq1aeKz74BMawaESAU91UCcDPy8HGoM/pub?embedded=true"
+                       target="_blank"
+                       class="button large"
+                       style="margin-bottom: 20px;">
+                       View / Download Resume
+                    </a>
                     <br>
-                    <button onclick="toggleResume()" class="button large">View Resume</button>
+                    <button onclick="toggleResume()" class="button large">View Resume Inline</button>
                 </div>
+
                 <div id="resumePreview" style="text-align: center; display: none; margin-top: 20px; margin-bottom: 60px; transition: all 0.3s ease-in-out;">
-                    <iframe src="https://docs.google.com/gview?url=https://khidayat527.github.io/khidayat_porto/CV%20Kenneth%20Hidayat%20(6).pdf&embedded=true" width="80%" height="600px" style="border: none;"></iframe>
+                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vSIC95Tuc9P3VyJDr1O7JunhO-aovgz1z0JIrLs5sFIv9c_fSq1aeKz74BMawaESAU91UCcDPy8HGoM/pub?embedded=true"
+                            width="80%"
+                            height="600px"
+                            style="border: none;">
+                    </iframe>
                 </div>
+
                 <script>
                     function toggleResume() {
                         var resumeDiv = document.getElementById('resumePreview');
