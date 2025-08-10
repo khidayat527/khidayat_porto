@@ -146,13 +146,14 @@
                     <button onclick="toggleResume()" class="button large">View Resume Inline</button>
                 </div>
 
-                <div id="resumePreview" style="text-align: center; display: none; margin-top: 20px; margin-bottom: 60px; transition: all 0.3s ease-in-out;">
+                <div id="resumePreview" style="display: none; transition: all 0.3s ease-in-out; text-align: center;">
                     <iframe src="https://docs.google.com/document/d/e/2PACX-1vSIC95Tuc9P3VyJDr1O7JunhO-aovgz1z0JIrLs5sFIv9c_fSq1aeKz74BMawaESAU91UCcDPy8HGoM/pub?embedded=true"
                             width="80%"
-                            height="600px"
-                            style="border: none;">
+                            height="800px"
+                            style="border: none; max-width: 900px;">
                     </iframe>
                 </div>
+
 
                 <script>
                     function toggleResume() {
@@ -281,3 +282,4 @@
 
 </body>
 </html>
+
